@@ -180,11 +180,11 @@ alert(Body)
 firebase.database().ref("messages").on("child_added", function(snap){
   a.push(snap.val().name)
   e.push(snap.val().email)
-  var p = document.createElement("p");
+  /*var p = document.createElement("p");
   p.innerHTML = "<button onclick='dm(this);' data-id='" + snap.key + "'>Delet</button>" + snap.val().name;
   p.style.position = "relative";
   p.style.top = "100";
-  document.body.appendChild(p)
+  document.body.appendChild(p)*/
     document.getElementById("Login").style.display = "block";
   document.getElementById("submit").style.display = "block";
   
